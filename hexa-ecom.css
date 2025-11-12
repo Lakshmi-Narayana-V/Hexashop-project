@@ -1,0 +1,253 @@
+/* navbar */
+.nav-item .nav-link {
+    margin-right: 25px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: aliceblue;
+    color: red;
+}
+
+/* Horizontal dotted row */
+.hrow {
+    border-bottom: 3px dotted lightgray;
+}
+
+/* banner */
+.left-content img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-content .inner-content {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-content .inner-content span {
+    font-style: italic;
+}
+
+.right-content {
+    position: relative;
+    text-align: center;
+}
+
+.right-content img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.right-content .inner-content {
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.right-content .inner-content span {
+    font-style: italic;
+}
+
+.right-content .hover-content {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    left: 0px;
+    bottom: 15px;
+    text-align: center;
+    background-color: rgba(42, 42, 42, .80);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hover-content .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+/* content italic */
+.italic-content {
+    font-style: italic;
+    color: grey;
+}
+
+/* card content stars */
+.card-body .stars ul li {
+    display: inline;
+    font-size: 14px;
+}
+
+/* card content price */
+.color-grey {
+    color: grey;
+    font-weight: bold;
+}
+
+/* card hover icons */
+.card-body .hover-content {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    bottom: -20px;
+    left: -20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.card-body:hover .hover-content {
+    bottom: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body .hover-content ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+.card-body .hover-content ul li a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    color: #2a2a2a;
+    background-color: #fff;
+}
+
+/* Explore Our Products */
+.quote i {
+    float: left;
+    font-size: 32px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.content-bg-grey {
+    width: 100%;
+    height: 227px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* social media */
+.images {
+    position: relative;
+}
+
+.images .hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.images:hover .hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.images .hover h6 {
+    color: #fff;
+    position: absolute;
+    font-size: 14px;
+    bottom: 40px;
+    font-weight: 400;
+    left: 15px;
+}
+
+.images .hover i {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* about page banner bg-img */
+.about-bg-img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-image: url(assets/about-us-page.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* product page banner bg-img */
+.product-bg-img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-image: url(assets/products-page-heading.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* icons background color */
+.bg-lg-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+/* bottom to top button */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
